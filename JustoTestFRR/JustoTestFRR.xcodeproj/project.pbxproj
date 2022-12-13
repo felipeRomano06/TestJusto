@@ -17,6 +17,14 @@
 		5ED070F92947B932002D4116 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED070F82947B932002D4116 /* RequestManager.swift */; };
 		5ED070FC2947BA3B002D4116 /* CodablesExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED070FB2947BA3B002D4116 /* CodablesExtensions.swift */; };
 		5ED070FE2947BAB0002D4116 /* UIImagesExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED070FD2947BAB0002D4116 /* UIImagesExtensions.swift */; };
+		5ED071032947C475002D4116 /* ShipsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED071022947C475002D4116 /* ShipsViewController.swift */; };
+		5ED071062947C49E002D4116 /* ShipsView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ED071052947C49E002D4116 /* ShipsView.storyboard */; };
+		5ED0710A2947C9A4002D4116 /* ShipsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED071092947C9A4002D4116 /* ShipsViewModel.swift */; };
+		5ED0710C2947CA97002D4116 /* ShipsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED0710B2947CA97002D4116 /* ShipsModels.swift */; };
+		5ED0710E2947DC11002D4116 /* ShipsRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED0710D2947DC11002D4116 /* ShipsRequestManager.swift */; };
+		5ED071102947DD4E002D4116 /* SpacexdataRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED0710F2947DD4E002D4116 /* SpacexdataRequests.swift */; };
+		5ED07115294804A5002D4116 /* ShipCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED07113294804A5002D4116 /* ShipCollectionViewCell.swift */; };
+		5ED07116294804A5002D4116 /* ShipCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ED07114294804A5002D4116 /* ShipCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +40,14 @@
 		5ED070F82947B932002D4116 /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		5ED070FB2947BA3B002D4116 /* CodablesExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodablesExtensions.swift; sourceTree = "<group>"; };
 		5ED070FD2947BAB0002D4116 /* UIImagesExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImagesExtensions.swift; sourceTree = "<group>"; };
+		5ED071022947C475002D4116 /* ShipsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsViewController.swift; sourceTree = "<group>"; };
+		5ED071052947C49E002D4116 /* ShipsView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShipsView.storyboard; sourceTree = "<group>"; };
+		5ED071092947C9A4002D4116 /* ShipsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsViewModel.swift; sourceTree = "<group>"; };
+		5ED0710B2947CA97002D4116 /* ShipsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsModels.swift; sourceTree = "<group>"; };
+		5ED0710D2947DC11002D4116 /* ShipsRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsRequestManager.swift; sourceTree = "<group>"; };
+		5ED0710F2947DD4E002D4116 /* SpacexdataRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacexdataRequests.swift; sourceTree = "<group>"; };
+		5ED07113294804A5002D4116 /* ShipCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipCollectionViewCell.swift; sourceTree = "<group>"; };
+		5ED07114294804A5002D4116 /* ShipCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShipCollectionViewCell.xib; sourceTree = "<group>"; };
 		8DE4C1F87559F4DD67763AB8 /* Pods-JustoTestFRR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustoTestFRR.debug.xcconfig"; path = "Target Support Files/Pods-JustoTestFRR/Pods-JustoTestFRR.debug.xcconfig"; sourceTree = "<group>"; };
 		DEA025145C5027B2F7032E47 /* Pods_JustoTestFRR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JustoTestFRR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -78,6 +94,9 @@
 		5ED070E22947B57F002D4116 /* JustoTestFRR */ = {
 			isa = PBXGroup;
 			children = (
+				5ED071012947C42D002D4116 /* Models */,
+				5ED071002947C408002D4116 /* ViewModels */,
+				5ED070FF2947C3EB002D4116 /* Views */,
 				5ED070F72947B905002D4116 /* Helpers */,
 				5ED070E32947B57F002D4116 /* AppDelegate.swift */,
 				5ED070E52947B57F002D4116 /* SceneDelegate.swift */,
@@ -93,8 +112,10 @@
 		5ED070F72947B905002D4116 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				5ED0711129480441002D4116 /* Cells */,
 				5ED070FA2947BA21002D4116 /* Extensions */,
 				5ED070F82947B932002D4116 /* RequestManager.swift */,
+				5ED0710F2947DD4E002D4116 /* SpacexdataRequests.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -106,6 +127,73 @@
 				5ED070FD2947BAB0002D4116 /* UIImagesExtensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5ED070FF2947C3EB002D4116 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5ED071072947C946002D4116 /* ShipDetailView */,
+				5ED071042947C47D002D4116 /* ShipsView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5ED071002947C408002D4116 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5ED071082947C975002D4116 /* ShipsViewModels */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5ED071012947C42D002D4116 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5ED0710B2947CA97002D4116 /* ShipsModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5ED071042947C47D002D4116 /* ShipsView */ = {
+			isa = PBXGroup;
+			children = (
+				5ED071022947C475002D4116 /* ShipsViewController.swift */,
+				5ED071052947C49E002D4116 /* ShipsView.storyboard */,
+			);
+			path = ShipsView;
+			sourceTree = "<group>";
+		};
+		5ED071072947C946002D4116 /* ShipDetailView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ShipDetailView;
+			sourceTree = "<group>";
+		};
+		5ED071082947C975002D4116 /* ShipsViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5ED071092947C9A4002D4116 /* ShipsViewModel.swift */,
+				5ED0710D2947DC11002D4116 /* ShipsRequestManager.swift */,
+			);
+			path = ShipsViewModels;
+			sourceTree = "<group>";
+		};
+		5ED0711129480441002D4116 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5ED071122948045B002D4116 /* ShipCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		5ED071122948045B002D4116 /* ShipCell */ = {
+			isa = PBXGroup;
+			children = (
+				5ED07113294804A5002D4116 /* ShipCollectionViewCell.swift */,
+				5ED07114294804A5002D4116 /* ShipCollectionViewCell.xib */,
+			);
+			path = ShipCell;
 			sourceTree = "<group>";
 		};
 		82DFB67F7F52027D8B9E66BC /* Frameworks */ = {
@@ -178,7 +266,9 @@
 			files = (
 				5ED070F02947B580002D4116 /* LaunchScreen.storyboard in Resources */,
 				5ED070ED2947B580002D4116 /* Assets.xcassets in Resources */,
+				5ED071062947C49E002D4116 /* ShipsView.storyboard in Resources */,
 				5ED070EB2947B57F002D4116 /* Main.storyboard in Resources */,
+				5ED07116294804A5002D4116 /* ShipCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,11 +321,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ED071102947DD4E002D4116 /* SpacexdataRequests.swift in Sources */,
 				5ED070E82947B57F002D4116 /* ViewController.swift in Sources */,
+				5ED0710E2947DC11002D4116 /* ShipsRequestManager.swift in Sources */,
 				5ED070E42947B57F002D4116 /* AppDelegate.swift in Sources */,
+				5ED0710A2947C9A4002D4116 /* ShipsViewModel.swift in Sources */,
+				5ED0710C2947CA97002D4116 /* ShipsModels.swift in Sources */,
 				5ED070E62947B57F002D4116 /* SceneDelegate.swift in Sources */,
 				5ED070FC2947BA3B002D4116 /* CodablesExtensions.swift in Sources */,
 				5ED070F92947B932002D4116 /* RequestManager.swift in Sources */,
+				5ED071032947C475002D4116 /* ShipsViewController.swift in Sources */,
+				5ED07115294804A5002D4116 /* ShipCollectionViewCell.swift in Sources */,
 				5ED070FE2947BAB0002D4116 /* UIImagesExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -388,7 +484,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = JustoTestFRR/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = HomeView.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -417,7 +513,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = JustoTestFRR/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = HomeView.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

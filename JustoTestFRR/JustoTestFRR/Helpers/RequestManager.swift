@@ -18,7 +18,7 @@ class RequestManager:NSObject{
     
     
     static func getImage(url:String, completion: @escaping (Data?,CodeResponse?) -> ()){
-        print(url)
+        print("URL image -->",url)
         AF.download(url).validate().responseData{
             (response) in
                 if let data = response.value {

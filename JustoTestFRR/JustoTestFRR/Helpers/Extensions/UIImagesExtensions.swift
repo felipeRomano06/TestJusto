@@ -12,13 +12,16 @@ extension UIImageView{
     
     func uploadImage(url: String){
         
-        RequestManager.getImage(url: url, completion: {
-            data, code in
-            if code == nil {
-                if let imageData = data{
-                    self.image = UIImage(data: imageData)
+        DispatchQueue.main.async {
+            RequestManager.getImage(url: url, completion: {
+                data, code in
+                if code == nil {
+                    if let imageData = data{
+                        self.image = UIImage(data: imageData)
+                    }
                 }
-            }
-        })
+            })
+        }
+        
     }
 }
