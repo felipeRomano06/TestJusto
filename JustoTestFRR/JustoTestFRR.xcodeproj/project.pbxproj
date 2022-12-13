@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0AF7A55A2CBE05B5D076D489 /* Pods_JustoTestFRR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEA025145C5027B2F7032E47 /* Pods_JustoTestFRR.framework */; };
+		5E81AA372948E55400C79541 /* MissionsCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E81AA352948E55400C79541 /* MissionsCellCollectionViewCell.swift */; };
+		5E81AA382948E55400C79541 /* MissionsCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E81AA362948E55400C79541 /* MissionsCellCollectionViewCell.xib */; };
+		5E81AA3A2948EAA700C79541 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E81AA392948EAA700C79541 /* UIViewExtensions.swift */; };
 		5ED070E42947B57F002D4116 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED070E32947B57F002D4116 /* AppDelegate.swift */; };
 		5ED070E62947B57F002D4116 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED070E52947B57F002D4116 /* SceneDelegate.swift */; };
 		5ED070E82947B57F002D4116 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED070E72947B57F002D4116 /* ViewController.swift */; };
@@ -25,10 +28,15 @@
 		5ED071102947DD4E002D4116 /* SpacexdataRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED0710F2947DD4E002D4116 /* SpacexdataRequests.swift */; };
 		5ED07115294804A5002D4116 /* ShipCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED07113294804A5002D4116 /* ShipCollectionViewCell.swift */; };
 		5ED07116294804A5002D4116 /* ShipCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5ED07114294804A5002D4116 /* ShipCollectionViewCell.xib */; };
+		5ED071182948C528002D4116 /* ShipDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED071172948C528002D4116 /* ShipDetailViewController.swift */; };
+		5ED0711A2948C541002D4116 /* ShipDetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ED071192948C541002D4116 /* ShipDetailView.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3E05340B774AEFABA20FE9B4 /* Pods-JustoTestFRR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustoTestFRR.release.xcconfig"; path = "Target Support Files/Pods-JustoTestFRR/Pods-JustoTestFRR.release.xcconfig"; sourceTree = "<group>"; };
+		5E81AA352948E55400C79541 /* MissionsCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionsCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		5E81AA362948E55400C79541 /* MissionsCellCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MissionsCellCollectionViewCell.xib; sourceTree = "<group>"; };
+		5E81AA392948EAA700C79541 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		5ED070E02947B57F002D4116 /* JustoTestFRR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JustoTestFRR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ED070E32947B57F002D4116 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5ED070E52947B57F002D4116 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +56,8 @@
 		5ED0710F2947DD4E002D4116 /* SpacexdataRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacexdataRequests.swift; sourceTree = "<group>"; };
 		5ED07113294804A5002D4116 /* ShipCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipCollectionViewCell.swift; sourceTree = "<group>"; };
 		5ED07114294804A5002D4116 /* ShipCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShipCollectionViewCell.xib; sourceTree = "<group>"; };
+		5ED071172948C528002D4116 /* ShipDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipDetailViewController.swift; sourceTree = "<group>"; };
+		5ED071192948C541002D4116 /* ShipDetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShipDetailView.storyboard; sourceTree = "<group>"; };
 		8DE4C1F87559F4DD67763AB8 /* Pods-JustoTestFRR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JustoTestFRR.debug.xcconfig"; path = "Target Support Files/Pods-JustoTestFRR/Pods-JustoTestFRR.debug.xcconfig"; sourceTree = "<group>"; };
 		DEA025145C5027B2F7032E47 /* Pods_JustoTestFRR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JustoTestFRR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -71,6 +81,15 @@
 				3E05340B774AEFABA20FE9B4 /* Pods-JustoTestFRR.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		5E81AA342948E51C00C79541 /* MissionsCell */ = {
+			isa = PBXGroup;
+			children = (
+				5E81AA352948E55400C79541 /* MissionsCellCollectionViewCell.swift */,
+				5E81AA362948E55400C79541 /* MissionsCellCollectionViewCell.xib */,
+			);
+			path = MissionsCell;
 			sourceTree = "<group>";
 		};
 		5ED070D72947B57F002D4116 = {
@@ -125,6 +144,7 @@
 			children = (
 				5ED070FB2947BA3B002D4116 /* CodablesExtensions.swift */,
 				5ED070FD2947BAB0002D4116 /* UIImagesExtensions.swift */,
+				5E81AA392948EAA700C79541 /* UIViewExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -166,6 +186,8 @@
 		5ED071072947C946002D4116 /* ShipDetailView */ = {
 			isa = PBXGroup;
 			children = (
+				5ED071172948C528002D4116 /* ShipDetailViewController.swift */,
+				5ED071192948C541002D4116 /* ShipDetailView.storyboard */,
 			);
 			path = ShipDetailView;
 			sourceTree = "<group>";
@@ -182,6 +204,7 @@
 		5ED0711129480441002D4116 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				5E81AA342948E51C00C79541 /* MissionsCell */,
 				5ED071122948045B002D4116 /* ShipCell */,
 			);
 			path = Cells;
@@ -264,7 +287,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ED0711A2948C541002D4116 /* ShipDetailView.storyboard in Resources */,
 				5ED070F02947B580002D4116 /* LaunchScreen.storyboard in Resources */,
+				5E81AA382948E55400C79541 /* MissionsCellCollectionViewCell.xib in Resources */,
 				5ED070ED2947B580002D4116 /* Assets.xcassets in Resources */,
 				5ED071062947C49E002D4116 /* ShipsView.storyboard in Resources */,
 				5ED070EB2947B57F002D4116 /* Main.storyboard in Resources */,
@@ -322,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ED071102947DD4E002D4116 /* SpacexdataRequests.swift in Sources */,
+				5E81AA3A2948EAA700C79541 /* UIViewExtensions.swift in Sources */,
 				5ED070E82947B57F002D4116 /* ViewController.swift in Sources */,
 				5ED0710E2947DC11002D4116 /* ShipsRequestManager.swift in Sources */,
 				5ED070E42947B57F002D4116 /* AppDelegate.swift in Sources */,
@@ -331,6 +357,8 @@
 				5ED070FC2947BA3B002D4116 /* CodablesExtensions.swift in Sources */,
 				5ED070F92947B932002D4116 /* RequestManager.swift in Sources */,
 				5ED071032947C475002D4116 /* ShipsViewController.swift in Sources */,
+				5ED071182948C528002D4116 /* ShipDetailViewController.swift in Sources */,
+				5E81AA372948E55400C79541 /* MissionsCellCollectionViewCell.swift in Sources */,
 				5ED07115294804A5002D4116 /* ShipCollectionViewCell.swift in Sources */,
 				5ED070FE2947BAB0002D4116 /* UIImagesExtensions.swift in Sources */,
 			);

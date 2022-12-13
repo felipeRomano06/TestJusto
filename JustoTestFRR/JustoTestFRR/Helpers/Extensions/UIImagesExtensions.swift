@@ -10,7 +10,7 @@ import UIKit
 
 extension UIImageView{
     
-    func uploadImage(url: String){
+    func downloadImage(url: String){
         
         DispatchQueue.main.async {
             RequestManager.getImage(url: url, completion: {
@@ -18,7 +18,11 @@ extension UIImageView{
                 if code == nil {
                     if let imageData = data{
                         self.image = UIImage(data: imageData)
+                    }else{
+                        self.image = UIImage(named: "no-pictures")
                     }
+                }else {
+                    self.image = UIImage(named: "no-pictures")
                 }
             })
         }

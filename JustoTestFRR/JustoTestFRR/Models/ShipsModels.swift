@@ -19,7 +19,7 @@ struct ShipsModelElement:Codable {
     let mmsi: Int?
     let abs, shipsModelClass, weightLbs, weightKg: Int?
     let yearBuilt: Int?
-    let homePort, status: String?
+    let home_port, status: String?
     let missions: [Mission]?
     let url: String?
     let image: String?

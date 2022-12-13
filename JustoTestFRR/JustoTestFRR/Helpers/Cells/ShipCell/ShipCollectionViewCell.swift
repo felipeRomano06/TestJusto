@@ -32,14 +32,7 @@ class ShipCollectionViewCell: UICollectionViewCell {
     }
     
     private func styleCell(){
-        layer.backgroundColor = UIColor.clear.cgColor
-        layer.shadowColor = UIColor.black.cgColor
-        layer.shadowOffset = CGSize(width: 0, height: 1.0)
-        layer.shadowOpacity = 0.2
-        layer.shadowRadius = 4.0
-        
-        backView.layer.cornerRadius = 10
-        backView.layer.masksToBounds = true
+        self.addShadowAndCornerRadius(radius: 10, backView: self.backView)
     }
     
     func config(ship:ShipsModelElement){
@@ -48,7 +41,7 @@ class ShipCollectionViewCell: UICollectionViewCell {
         self.shipType.text = ship.ship_type
         
         if let imageURL = ship.image {
-            self.shipImage.uploadImage(url: imageURL)
+            self.shipImage.downloadImage(url: imageURL)
         }
         
     }

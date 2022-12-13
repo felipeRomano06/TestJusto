@@ -48,25 +48,28 @@ class ShipsViewController: UIViewController {
 
 extension ShipsViewController: ShipsViewModelProtocol{
     
+    /// muestra el loader
     func showLoader() {
         self.spinner.isHidden = false
         self.spinner.startAnimating()
     }
     
+    ///Esconde el loader
     func hideLoader() {
         self.spinner.isHidden = true
         self.spinner.stopAnimating()
         
     }
-    
+    ///Carga los ships al collectionView
     func loadShips(ships: [ShipsModelElement]) {
-        print("Cantidad de naves --->", ships.count)
         self.ships.append(contentsOf: ships)
         isUpdating = false
         if ships.count != 0{
             DispatchQueue.main.async {
                 self.collectionView.reloadData()
             }
+        }else{
+            isFullCards = true
         }
         
     }
@@ -76,6 +79,16 @@ extension ShipsViewController: ShipsViewModelProtocol{
 
 
 extension ShipsViewController: UICollectionViewDelegate{
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "ShipDetailView", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "ShipDetailViewController") as! ShipDetailViewController
+        
+        vc.ship = ships[indexPath.row]
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
     
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
